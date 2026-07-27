@@ -3,6 +3,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+function logError(message) {
+    console.error(`Error: ${message}`);
+}
+
 /**
  * Counts files and folders in a given directory.
  * @param {string} dirPath - Path to the directory.
@@ -34,6 +38,7 @@ async function isValidDirectory(dirPath) {
         const stat = await fs.stat(dirPath);
         return stat.isDirectory();
     } catch (err) {
+        logError(`${err.message}`);
         return false;
     }
 }
@@ -61,7 +66,7 @@ async function main(args) {
     const targetPath = targetArg ? path.resolve(process.cwd(), targetArg) : process.cwd();
 
     if (!(await isValidDirectory(targetPath))) {
-        console.error(`Error: Folder not found or is not a directory: "${targetPath}"`);
+        logError(`Folder not found or is not a directory: "${targetPath}"`);
         process.exit(1);
     }
 
@@ -70,7 +75,8 @@ async function main(args) {
 }
 
 // Execute the script
-main(process.argv).catch((err) => {
-    console.error(`Error: ${err.message}`);
-    process.exit(1);
-});
+await main(process.argv)
+    .catch(err => {
+        logError(err.message);
+        process.exit(1);
+    });

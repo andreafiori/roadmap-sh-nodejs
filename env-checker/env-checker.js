@@ -6,7 +6,7 @@ function printError(message) {
 
 function getMissingNames(names, env = process.env) {
   if (!Array.isArray(names)) {
-    throw new Error("names must be an array");
+    throw new TypeError("names must be an array");
   }
   return names.filter((name) => !(name in env));
 }

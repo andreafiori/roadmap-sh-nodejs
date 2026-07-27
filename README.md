@@ -2,7 +2,11 @@
 
 A curated collection of backend and CLI projects built while following the [roadmap.sh](https://roadmap.sh/) backend and Node.js paths.
 
-> **Environment:** Node.js `v20.19.2`
+## Environment
+
+- Node.js `v20.19.2`
+- Jest
+- VSCode with SonarQube for IDE plugin
 
 ---
 

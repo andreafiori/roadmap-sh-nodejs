@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 
 task-tracker/tasks.json
+expense-tracker/expenses.json

@@ -4,13 +4,15 @@ An interface (CLI) to track what you need to do, what you have done, and what yo
 
 ## Installation
 
+Install dependencies:
+
     npm i
 
 Run a command:
 
     npm run task-cli <args>
 
-Make task-cli the command global
+Make task-cli the command global:
 
     npm i -g
 
@@ -37,6 +39,8 @@ Make task-cli the command global
     task-cli list in-progress
 
 ## Testing
+
+Tests with Jests are available:
 
     npm run test
 
