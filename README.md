@@ -6,7 +6,7 @@ A curated collection of backend and CLI projects built while following the [road
 
 - [Node.js](https://nodejs.org/) `v20.19.2`
 - [Jest](https://jestjs.io/)
-- [Yargs](https://yargs.js.org/)
+- [Yargs](https://yargs.js.org/) for the caching proxy project.
 - VSCode with SonarQube for IDE plugin
 
 ---
@@ -15,10 +15,13 @@ A curated collection of backend and CLI projects built while following the [road
 
 | Project | Description |
 | :--- | :--- |
+| [Caching proxy](./caching-proxy/) | Cache proxy |
+| [Env checker](./env-checker/) | Check evironment variables |
 | [Folder Info](./folder-info/) | Folder statistics and info generator |
 | [File Counter](./file-counter/) | Counts file rows and metrics |
 | [GitHub Profile Details](./github-profile-details/) | Fetches and returns a GitHub profile via username |
 | [JSON Formatter](./json-formatter/) | Formats JSON structures and values |
+| [GitHub Profile Details](./github-profile-details/) | Fetches user profile data |
 | [GitHub User Activity](./github-user-activity/) | Fetches recent GitHub user activity |
 
 ---

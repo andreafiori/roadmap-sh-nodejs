@@ -29,3 +29,13 @@ User should be able to start the caching proxy server by running a command like 
 Example:
 
     caching-proxy --port 3000 --origin http://dummyjson.com
+
+## Proxy check
+
+First request (cache miss):
+
+    curl http://localhost:3000/product
+
+Second request (cache hit):
+
+    curl http://localhost:3000/products

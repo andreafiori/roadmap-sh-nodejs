@@ -1,5 +1,10 @@
+# Node modules and package lock file
 node_modules/
 package-lock.json
 
+# Environment variables
+.env
+
+# Data files
 task-tracker/tasks.json
 expense-tracker/expenses.json
