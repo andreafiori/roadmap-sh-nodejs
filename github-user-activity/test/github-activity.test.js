@@ -1,4 +1,4 @@
-const { GitHubActivityFetcher } = require("./github-activity");
+const { GitHubActivityFetcher } = require("../src/GitHubActivityFetcher");
 
 describe("GitHubActivityFetcher", () => {
     it("should fetch and display activity", async () => {
@@ -21,5 +21,12 @@ describe("GitHubActivityFetcher", () => {
 
         const fetcher = new GitHubActivityFetcher(mockFetch);
         await expect(fetcher.fetchActivity("testUser")).rejects.toThrow("User not found. Please check the username.");
+    });
+
+    it("should display no activity message", () => {
+        const fetcher = new GitHubActivityFetcher();
+        console.log = jest.fn();
+        fetcher.displayActivity({});
+        expect(console.log).toHaveBeenCalledWith("No recent activity found.");
     });
 });
