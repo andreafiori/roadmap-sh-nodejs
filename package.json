@@ -1,0 +1,46 @@
+{
+  "name": "roadmap-sh-nodejs",
+  "version": "1.0.0",
+  "description": "A curated collection of backend and CLI projects built while following the [roadmap.sh](https://roadmap.sh/) backend and Node.js paths.",
+  "main": "index.js",
+  "bin": {
+    "caching-proxy": "./src/caching-proxy/index.js",
+    "env-checker": "./src/env-checker/index.js",
+    "expense-tracker": "./src/expense-tracker/index.js",
+    "file-counter": "./src/file-counter/index.js",
+    "folder-info": "./src/folder-info/index.js",
+    "github-profile-details": "./src/github-profile-details/index.js",
+    "github-user-activity": "./src/github-user-activity/index.js",
+    "json-formatter": "./src/json-formatter/index.js",
+    "task-tracker": "./src/task-tracker/index.js"
+  },
+  "scripts": {
+    "caching-proxy": "node src/caching-proxy/index.js",
+    "env-checker": "node src/env-checker/index.js",
+    "expense-tracker": "node src/expense-tracker/index.js",
+    "file-counter": "node src/file-counter/index.js",
+    "folder-info": "node src/folder-info/index.js",
+    "json-formatter": "node src/json-formatter/index.js",
+    "github-profile": "node src/github-profile-details/index.js",
+    "github-activity": "node src/github-user-activity/index.js",
+    "task-tracker": "node src/task-tracker/index.js",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-coverage-html": "jest --coverage --coverageDirectory=coverage --coverageReporters=html"
+  },
+  "keywords": [
+    "roadmap.sh",
+    "nodejs",
+    "backend",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "yargs": "^18.1.0"
+  }
+}

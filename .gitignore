@@ -1,6 +1,7 @@
 # Node modules and package lock file
 node_modules/
 package-lock.json
+coverage
 
 # Environment variables
 .env

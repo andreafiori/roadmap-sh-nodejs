@@ -7,22 +7,34 @@ A curated collection of backend and CLI projects built while following the [road
 - [Node.js](https://nodejs.org/) `v20.19.2`
 - [Jest](https://jestjs.io/)
 - [Yargs](https://yargs.js.org/) for the caching proxy project.
-- VSCode with SonarQube for IDE plugin
+- SonarQube for IDE plugin (VSCode)
+
+## Testing
+
+Jest unit tests commands:
+
+    # Running all tests
+    npm run test
+
+    # Generate CLI coverage report
+    npm run test-coverage
+
+    # Generate HTML coverage report
+    npm run test-coverage-html
 
 ---
 
-## 📂 Local Directory Links
+## 📂 Projects documentation
 
 | Project | Description |
 | :--- | :--- |
-| [Caching proxy](./caching-proxy/) | Cache proxy |
-| [Env checker](./env-checker/) | Check evironment variables |
-| [Folder Info](./folder-info/) | Folder statistics and info generator |
-| [File Counter](./file-counter/) | Counts file rows and metrics |
-| [GitHub Profile Details](./github-profile-details/) | Fetches and returns a GitHub profile via username |
-| [JSON Formatter](./json-formatter/) | Formats JSON structures and values |
-| [GitHub Profile Details](./github-profile-details/) | Fetches user profile data |
-| [GitHub User Activity](./github-user-activity/) | Fetches recent GitHub user activity |
+| [Caching proxy](./docs/caching-proxy/README.md) | Cache proxy |
+| [Env checker](./docs/env-checker/README.md) | Check evironment variables |
+| [Folder Info](./docs/folder-info/README.md) | Folder statistics and info generator |
+| [File Counter](./docs/file-counter/README.md) | Counts file rows and metrics |
+| [GitHub Profile Details](./docs/github-profile-details/README.md) | Fetches and returns a GitHub profile via username |
+| [JSON Formatter](./docs/json-formatter/README.md) | Formats JSON structures and values |
+| [GitHub User Activity](./docs/github-user-activity/README.md) | Fetches recent GitHub user activity |
 
 ---
 
