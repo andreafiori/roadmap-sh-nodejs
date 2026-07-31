@@ -29,7 +29,7 @@ Jest unit tests commands:
 | Project | Description |
 | :--- | :--- |
 | [Caching proxy](./docs/caching-proxy/README.md) | Cache proxy |
-| [Env checker](./docs/env-checker/README.md) | Check evironment variables |
+| [Env checker](./docs/env-checker/README.md) | Check environment variables |
 | [Folder Info](./docs/folder-info/README.md) | Folder statistics and info generator |
 | [File Counter](./docs/file-counter/README.md) | Counts file rows and metrics |
 | [GitHub Profile Details](./docs/github-profile-details/README.md) | Fetches and returns a GitHub profile via username |
